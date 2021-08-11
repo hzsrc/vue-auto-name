@@ -13,8 +13,9 @@ function parseVue(vue) {
         var js = code.match(jsReg);
         js = js && js[1]
         if (js) {
-            var space = js.match(/ {2,}/)[0]
-            var hasName = new RegExp('\\n'+ space + '[\'"]?name[\'"]?:').test(js)
+            var space = js.match(/ {2,}/) || '';
+            if (space) space = space[0]
+            var hasName = new RegExp('\\n' + space + '[\'"]?name[\'"]?:').test(js)
             if (!hasName) {
                 code = code.replace(js, `{\n        name: '${toCompoName(vue)}',` + js.slice(1))
                 fs.writeFile(vue, code, { encoding: 'utf-8' }, (err, code) => {
