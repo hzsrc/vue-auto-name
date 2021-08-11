@@ -1,0 +1,30 @@
+{
+  "name": "vue-auto-name",
+  "version": "1.0.3",
+  "description": "自动生成vue组件的名称",
+  "main": "index.js",
+  "scripts": {
+  },
+  "dependencies": {
+    "globby": "^11"
+  },
+  "keywords": [
+    "webpack",
+    "javascript",
+    "vue",
+    "component",
+    "name"
+  ],
+  "author": {
+    "name": "James.Huang",
+    "email": "hz932@qq.com",
+    "url": "http://www.hz300.com/vue-auto-name/"
+  },
+  "license": "MIT",
+  "readme": "readme.md",
+  "devDependencies": {
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
