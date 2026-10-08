@@ -1,4 +1,4 @@
-var globby = require('globby');
+var globby = require('tinyglobby');
 var fs = require('fs'), path = require('path')
 
 module.exports = function enumDir(dir) {

@@ -1,12 +1,12 @@
 {
   "name": "vue-auto-name",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "自动生成vue组件的名称",
   "main": "index.js",
   "scripts": {
   },
   "dependencies": {
-    "globby": "^11"
+    "tinyglobby": "^0.2.17"
   },
   "keywords": [
     "webpack",
